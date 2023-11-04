@@ -32,8 +32,9 @@ public class GetApiTest {
         response.prettyPeek();
     }
 
+
     @Test //GET001
-    public void whenGetAllBooksWithoutAuth_thenUnauthorized2() {
+    public void whenGetAllBooksWithoutAuth_thenUnauthorized() {
         response = RestAssured
                 .get(booksPath);
 
